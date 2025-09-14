@@ -3,6 +3,11 @@ module "resource_group" {
     rg_name = "elearn_rg"
     rg_location = "centralindia"
 }
+module "resource_group1" {
+    source = "../../module/azurerm_resource_group"
+    rg_name = "elearn_rg1"
+    rg_location = "centralindia"
+}
 
 module "azurerm_virtual_network" {
     source = "../../module/azurerm_virtual_network"
