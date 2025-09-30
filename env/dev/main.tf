@@ -9,6 +9,7 @@ module "resource_group1" {
     rg_location = "centralindia"
 }
 
+
 module "azurerm_virtual_network" {
     source = "../../module/azurerm_virtual_network"
     depends_on = [ module.resource_group ]
